@@ -7,7 +7,7 @@
     --header-font-size: 2rem;
     --text-font-size: 1rem;
     --icon-size : 25px;
-    --artist-text-size: 22px;
+    --artist-text-size: 18px;
     --second-color-alt: #a755ee;
 }
 *{
@@ -35,18 +35,8 @@ a {
     color: var(--text-color);
 }
 
-.container{
-    max-width: 768px;
-    margin-left: 1.5rem;
-    margin-right: 1.5rem;
-}
- .grid {
-    display: grid;
-    gap: 30px;
-    align-items: center;
-    justify-content: space-between;
-    
-}
+
+ 
 
 .flex {
     display: flex;
@@ -61,17 +51,7 @@ a {
     
     }
 
-    .playlist-container .grid {
-        grid-template-columns: repeat(3, 1fr);
-    }
-    .showcase .grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-.nav-menu {
-    padding: 2rem .25rem 4rem;
-}
-
+   
 
 .nav-list { 
     column-gap: 0;
@@ -87,7 +67,7 @@ a {
 
 .nav-title {
 
-    flex: 2;
+
     font-family: 'Ameyallinda Signatur';
 }
 
@@ -107,11 +87,10 @@ nav {
   
   
 }
-
-.nav-list-items a{
-    padding: 10px;
-    margin: 5px;
+.grid {
+    gap: 20px;
 }
+
 
 .nav-list-items a:hover {
     /* border-bottom: 5px rgb(85, 85, 85) solid; */
@@ -134,6 +113,10 @@ nav {
     
     
 }
+.nav-list-items a{
+    padding: 10px;
+    margin: 5px;
+}
 
 .btn {
     background-color: var(--second-color);
@@ -155,18 +138,7 @@ nav {
     height: 300px;
  }
 
- .headphones-img {
-    width: 300px;
-    height: 400px;
-    padding: 10px;
-    margin: 20px 0;
-    border-radius: .5rem;
-    justify-self: center;
-    align-self: center;
-    order: 1;
-    transform: rotate(-20deg);
- }
-
+ 
  .hidden {
      display: none;
  }
@@ -177,33 +149,73 @@ nav {
 
 @media screen and (max-width: 767px) {
 
-  
-    .showcase .flex {
-        flex-direction: column;
-        flex-wrap: wrap;
+   
+
+    .container{
+        max-width: 768px;
+        margin-left: 1.5rem;
+        margin-right: 1.5rem ;
+        
     }
 
+     .card {
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         flex-direction: column;
+        width: 250px;
+        background-color: var(--body-color);
+        border-radius : 10px;
+        box-shadow: 0 3px 2px rgba(255, 255, 255, 0.2);
+        padding: 10px;
+        margin: 0px;
+      
+       
+    }
+
+    .header .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .showcase .grid {
+        display: flex;
+        flex-direction: column;
+        
+
+    }
+    
+    .playlist-container .grid{
+        display: flex;
+        flex-direction: column;
+       
+    }
+    
+    .section-title {
+        margin: 1.5rem 0;
+    }
+    
     .headphones-img {
+        order: 0;
         width: 200px;
         height: 200px;
-        padding: 10px;
-        margin: 20px 0;
-        border-radius: .5rem;
-        justify-self: center;
-        align-self: center;
         flex: 2;
         transform: rotate(-20deg);
     
     }
    
     .artist-img {
-       width: 300px;
-       height: 300px;
+        padding: 10px;
+       max-width: 200px;
+       max-height: 200px;
     }
 
     .artist-details {
         font-size: var(--artist-text-size);
         padding: 5px;
+        flex-wrap: wrap;
     }
 
     .btn-small{
@@ -212,23 +224,22 @@ nav {
     }
 
     .artist-img-second{
-        width: 300px;
-        height: 200px;
+        padding: 10px;
+        max-width: 200px;
+        max-height: 200px;
     }
 
+    .section-paragraph {
+        width: 200px;
+    }
   
-
-    
   
 
 
 }
 
 @media screen and (min-width: 768px) {
-    .playlist-container .grid {
-        grid-template-columns: 1fr 1fr;
-    }
-
+   
     .artist-img, .artist-img-second {
         width: 300px;
         height: 200px;
@@ -237,11 +248,31 @@ nav {
     .card{
         padding: 10px;
         margin: 5px;
+       
+    }
+    .nav-list-items a{
+        padding: 10px;
+        margin: 5px;
     }
 
+    .headphones-img {
+        width: 300px;
+        height: 400px;
+        padding: 10px;
+        margin: 20px 0;
+        border-radius: .5rem;
+        justify-self: center;
+        align-self: center;
+        order: 1;
+        transform: rotate(-20deg);
+     }
+    
 }
 @media screen and (min-width: 1024px) {
-
+    .nav-list-items a{
+        padding: 10px;
+        margin: 5px;
+    }
     .container {
         max-width: 1100px;
         margin: 0 auto;
@@ -257,6 +288,13 @@ nav {
     .artist-img, .artist-img-second {
         width: 300px;
         height: 200px;
+    }
+    .grid {
+        display: grid;
+        gap: 30px;
+        align-items: center;
+        justify-content: space-between;
+        
     }
 }
 
