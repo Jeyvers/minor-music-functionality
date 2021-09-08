@@ -203,6 +203,7 @@ nav {
         height: 200px;
         flex: 2;
         transform: rotate(-20deg);
+        margin: 10px 0;
     
     }
    
