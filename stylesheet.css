@@ -90,9 +90,9 @@ img {
 }
 
 .nav-title {
-    /* margin-left: var(--mb-2-5); */
-    font-family: 'Ameyallinda Signatur';
     color: var(--second-color);
+    width: 120px;
+    height: 40px;
 }
 
 .nav-container {
@@ -205,7 +205,7 @@ img {
    text-align: center;
    font-size: var(--medium-font-size);
    padding: 15px;
-   font-weight: bold;
+
 }
 
 
