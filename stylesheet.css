@@ -210,7 +210,7 @@ img {
 
 
 /* small devices */
-@media screen and (max-width: 320px){
+@media screen and (max-width: 435px){
 
     .container:first-of-type{
         background-color: var(--first-color);
