@@ -1,0 +1,16 @@
+[
+    {
+    "identity" : "HIP-HOP",
+    "img_src": "img/Cover+of+NF+THE+SEARCH.png",
+    "artist_name" : "NF -",
+    "music_title" : "The Search",
+    "music_src": "mp3/01 The Search.mp3"
+    },
+    {
+    "identity" : "RNB",
+    "img_src": "img/sasha-older.jpg",
+    "artist_name" : "Sasha Sloan - ",
+    "music_title" : "Older",
+    "music_src": "mp3/Sasha Sloan - Older.mp3"
+    }
+]

@@ -1,32 +1,18 @@
 let showcaseContainer = document.getElementById('showcase-container');
-document.querySelector('body').addEventListener('click', playMusic);
 let audioList = document.getElementById('audio-list');
-const musicList = [
-    {
-        identity : 'HIP-HOP',
-        img_src : 'img/Cover+of+NF+THE+SEARCH.png',
-        artist_name : 'NF -',
-        music_title : 'The Search',
-        music_src: 'mp3/01 The Search.mp3'
-    },
-    {
-        identity : 'RNB',
-        img_src : 'img/sasha-older.jpg',
-        artist_name : 'Sasha Sloan - ',
-        music_title : 'Older',
-        music_src: 'mp3/Sasha Sloan - Older.mp3'
-    }
-
-]
+document.addEventListener('DOMContentLoaded', loadMusicList)
+document.addEventListener('click', playMusic)
 
 
-musicList.forEach(function(music){
+function loadMusicList(){
+    fetch('music.json')
+    .then((res) => res.json())
+    .then((data) => {
+        let output = '';
 
-    showcaseDiv = document.createElement('div');
-    // let output = '';
-   
-    showcaseDiv += `
-
+        data.forEach(function(music){
+        output += `
+        
         <div class="showcase grid">
         <div class="showcase-identity-container">
         <div>
@@ -62,50 +48,24 @@ musicList.forEach(function(music){
 </button>
     </div>
     </div>
-    `
-    console.log(showcaseDiv)
-    // showcaseContainer.appendChild(output);
+        `
+    });
+
+    showcaseContainer.innerHTML = output;
 
     let audio = '';
     audio += ` <audio id="theSong">
-    <source src="${music.music_src}" type="audio/mp3">
+    <source src="${data.music_src}" type="audio/mp3">
     </audio>`
     audioList.innerHTML = audio;
-    
-    
-    
-    
-});
-
-
-function playMusic(e){
-    musicList.forEach( function(music){
-      
-        
-       if(e.target.classList.contains('playIcon')){
-       let theSong = document.getElementById('theSong');
-       let playIcon = document.getElementById('playIcon');
-       let pauseIcon = document.getElementById('pauseIcon');
-
-        if(theSong.paused){
-            theSong.play();
-            playIcon.classList.add('hidden');
-            pauseIcon.classList.add('active');
-        } else {
-            theSong.pause();
-        }
-
-        pauseIcon.onclick = () => {
-            theSong.pause();
-            playIcon.classList.remove('hidden')
-            pauseIcon.classList.remove('active')
-        }
-       }
-        
-
-
+    console.log(audioList);
     })
-   
+
 }
 
-
+function playMusic(e){
+    
+    if(e.target.classList.contains('playIcon')){
+    console.log(data)
+    }
+}
