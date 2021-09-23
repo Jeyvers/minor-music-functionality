@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+
+    <title>Jey&Roei | Music</title>
+</head>
+<body>
+    <!-- Header -->
+<header class="header" id="header">
+<nav class="container flex">
+   
+        <a href="#" class="nav-title">Jey & Roei</a>
+    
+    
+    
+        <ul class="nav-list" id="nav-list">
+            <li class="nav-list-items">
+                <a href="#">Home</a>
+            </li>
+            <li class="nav-list-items">
+                <a href="#">Playlist</a>
+            </li>
+        </ul>
+   
+    
+</nav>
+
+    </header>
+    <!-- Showcase Section -->
+    <section class="showcase">
+        <div class="container grid">
+            <img src="img/headphones.png" alt="" class="headphones-img">
+            
+            <div>
+                <h2>Listen to the sound.</h2>
+                <p class="section-paragraph">A collection of a variety of playlists choosen by certain music professionals of different temperaments and identities. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, nemo enim. Nesciunt asperiores sed velit iste perferendis saepe et vitae. </p>
+                <button class="btn btn-medium ">  <a href=""> <i class="uil uil-boombox"></i> Subscribe</a>  </button>
+            </div>
+        </div>
+    </section>
+
+    <section id="playlist">
+        <div class="container playlist-container">
+        <h1 class="section-title">Playlist</h1>
+    
+        <div class="grid">     
+
+        <!-- First Card -->
+            <div class="card">
+                <img src="img/Cover+of+NF+THE+SEARCH.png" alt="" class="artist-img">
+                <p class="artist-details">
+                    NF     -      The Search
+                </p>
+                <button  class="btn btn-small" id="theSearchIcon">
+                 <i class="uil uil-play-circle icon"></i> Play
+                </button>
+                <button  class="btn btn-small hidden" id="searchPause">
+                    <i class="uil uil-pause-circle"></i> Pause
+                </button>
+
+                <button class="btn btn-small"> <a download="" href="mp3/01 The Search.mp3">  <i class="uil uil-download-alt"></i> Download </a>
+                </button>
+            </div>
+
+            <!-- Second card -->
+            <div class="card">
+                <img src="img/Adekunle-Gold-Sinner.jpg" alt="" class="artist-img">
+                <p class="artist-details">
+                   Adekunle Gold - Sinner
+                </p>
+                <button  class="btn btn-small" id="sinnerIcon">
+                 <i class="uil uil-play-circle icon"></i> Play
+                </button>
+                <button  class="btn btn-small hidden" id="sinnerPause">
+                    <i class="uil uil-pause-circle"></i> Pause
+                </button>
+                <button class="btn btn-small"> <a download="" href="mp3/Adekunle_Gold_Ft_Lucky_Daye_-_Sinner.mp3">  <i class="uil uil-download-alt"></i> Download </a>
+               
+                </button>
+            </div>
+
+                 <!-- Third card -->
+            <div class="card">
+                <img src="img/Kiiara-beautiful.png" alt="" class="artist-img-second">
+                <p class="artist-details">
+                   Kiiara      -   Tennesee
+                </p>
+                <button  class="btn btn-small" id="tennesseIcon">
+                 <i class="uil uil-play-circle icon"></i> Play
+                </button>
+                <button  class="btn btn-small hidden" id="tennessePause">
+                    <i class="uil uil-pause-circle"></i> Pause
+                </button>
+                <button class="btn btn-small"> <a download="" href="mp3/Kiiara_-_Tennessee_(Official_Audio)(128k).mp3">  <i class="uil uil-download-alt"></i> Download </a>
+               
+                </button>
+            </div>
+
+            <div class="card">
+                <img src="img/Bites-The-Dust-cover.jpg" alt="" class="artist-img-second">
+                <p class="artist-details">
+                   Simi      -   City Lights
+                </p>
+                <button  class="btn btn-small" id="cityLightsIcon">
+                 <i class="uil uil-play-circle icon"></i> Play
+                </button>
+
+                  <button  class="btn btn-small hidden" id="cityLightsPause">
+                    <i class="uil uil-pause-circle"></i> Pause
+                </button>
+               
+                <button class="btn btn-small"> <a download="" href="mp3/Simi_-_City_Lights_NaijaMusic.com.ng.mp3">  <i class="uil uil-download-alt"></i> Download </a>
+               
+                </button>
+            </div>
+        </div>
+        </div>
+
+        <audio id="theSearchSong">
+            <source src="mp3/01 The Search.mp3" type="audio/mp3">
+        </audio>
+        <audio id="sinnerSong">
+            <source src="mp3/Adekunle_Gold_Ft_Lucky_Daye_-_Sinner.mp3" type="audio/mp3">
+        </audio>
+        <audio id="tennesseSong">
+            <source src="mp3/Kiiara_-_Tennessee_(Official_Audio)(128k).mp3" type="audio/mp3">
+        </audio>
+        <audio id="cityLightsSong">
+            <source src="mp3/Simi_-_City_Lights_NaijaMusic.com.ng.mp3" type="audio/mp3">
+        </audio>
+
+    </section>
+
+    <!-- Footer -->
+
+    <script src="script.js"></script>
+</body>
+</html>

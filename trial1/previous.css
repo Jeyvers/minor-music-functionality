@@ -1,0 +1,349 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+:root {
+    --body-color:#202224;
+    --second-color:#892cdc;
+    --text-color: #fff;
+    --title-color: #6b6b6b;
+    --header-font-size: 2rem;
+    --text-font-size: 1rem;
+    --icon-size : 25px;
+    --artist-text-size: 18px;
+    --second-color-alt: #a755ee;
+}
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    line-height: 1.5rem;
+    /* user-select: none; */
+}
+
+body {
+
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--body-color);
+    color: var(--text-color);
+    /* #ffc478, bbdfcb, efb7b7, bd4b4b, 892cdc */
+    font-size: var(--text-font-size);
+}
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+
+ 
+
+.flex {
+    display: flex;
+}
+
+.header {
+    align-content: center;
+    justify-content: center;
+    margin-top: 20px;
+   background-color:var(--body-color) ;
+
+    
+    }
+
+   
+
+.nav-list { 
+    column-gap: 0;
+
+}
+
+.section-title {
+    color: var(--title-color);
+    font-size: var(--header-font-size);
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.nav-title {
+
+
+    font-family: 'Ameyallinda Signatur';
+}
+
+nav {
+        
+    justify-content: space-between;
+    color: var(--text-color);
+}
+
+
+.nav-list {
+    margin: 5px 0;
+}
+.nav-list-items {
+  display: inline;
+  
+  
+  
+}
+.grid {
+    gap: 20px;
+}
+
+
+.nav-list-items a:hover {
+    /* border-bottom: 5px rgb(85, 85, 85) solid; */
+   border-radius: 5px;
+
+    box-shadow: 
+    0 0 5px rgb(255, 255, 255),
+    0 0 5px rgb(255, 255, 255);
+
+    transform: scale(1.2);
+}
+
+
+.card {
+    background-color: var(--body-color);
+    border-radius : 10px;
+    box-shadow: 0 3px 10px rgba(255, 255, 255, 0.2);
+    padding: 20px;
+    margin: 10px;
+    
+    
+}
+.nav-list-items a{
+    padding: 10px;
+    margin: 5px;
+}
+
+.btn {
+    background-color: var(--second-color);
+    padding: 10px 20px;
+    color: var(--text-color);
+    margin: 10px 0;
+    border-radius: 10px;
+    font-size: 16px ;
+    border: none;
+
+}
+
+.btn:hover {
+    background-color: var(--second-color-alt);
+}
+
+.artist-img {
+    width: 300px;
+    height: 300px;
+ }
+
+ 
+ .hidden {
+     display: none;
+ }
+
+ .active {
+     display: inline-block;
+ }
+
+@media screen and (max-width: 767px) {
+
+   
+
+    .container{
+        max-width: 768px;
+        margin-left: 1.5rem;
+        margin-right: 1.5rem ;
+        
+    }
+
+     .card {
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         flex-direction: column;
+        width: 250px;
+        background-color: var(--body-color);
+        border-radius : 10px;
+        box-shadow: 0 3px 2px rgba(255, 255, 255, 0.2);
+        padding: 10px;
+        margin: 20px 0;
+      
+       
+    }
+
+    .header .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .showcase .grid {
+        display: flex;
+        flex-direction: column;
+        
+
+    }
+    
+    .playlist-container .grid{
+        display: flex;
+        flex-direction: column;
+       
+    }
+    
+    .section-title {
+        margin: 1.5rem 0;
+    }
+    
+    .headphones-img {
+        order: 0;
+        width: 200px;
+        height: 200px;
+        flex: 2;
+        transform: rotate(-20deg);
+        margin: 10px 0;
+    
+    }
+   
+    .artist-img {
+        padding: 10px;
+       max-width: 200px;
+       max-height: 200px;
+    }
+
+    .artist-details {
+        font-size: var(--artist-text-size);
+        padding: 5px;
+        flex-wrap: wrap;
+    }
+
+    .btn-small{
+        padding: 5 40px 5 40px;
+        
+    }
+
+    .artist-img-second{
+        padding: 10px;
+        max-width: 200px;
+        max-height: 200px;
+    }
+
+    .section-paragraph {
+        width: 200px;
+    }
+  
+  
+
+
+}
+
+@media screen and (min-width: 768px) {
+   
+    .artist-img, .artist-img-second {
+        width: 300px;
+        height: 200px;
+    }
+
+    .card{
+        padding: 10px;
+        margin: 5px;
+       
+    }
+    .nav-list-items a{
+        padding: 10px;
+        margin: 5px;
+    }
+
+    .headphones-img {
+        width: 300px;
+        height: 400px;
+        padding: 10px;
+        margin: 20px 0;
+        border-radius: .5rem;
+        justify-self: center;
+        align-self: center;
+        order: 1;
+        transform: rotate(-20deg);
+     }
+    
+}
+@media screen and (min-width: 1024px) {
+    .nav-list-items a{
+        padding: 10px;
+        margin: 5px;
+    }
+    .container {
+        max-width: 1100px;
+        margin: 0 auto;
+    }
+
+    .playlist-container .grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .showcase .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .artist-img, .artist-img-second {
+        width: 300px;
+        height: 200px;
+    }
+    .grid {
+        display: grid;
+        gap: 30px;
+        align-items: center;
+        justify-content: space-between;
+        
+    }
+}
+
+
+/* 
+.container {
+    max-width: 1100;
+    margin: 0 auto;
+    padding: 0px 60px 0 150px; 
+}
+
+
+.card {
+    background-color: var(--text-color);
+    border-radius : 10px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    margin: 10px;
+    color: #333;
+}
+
+.flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: center; 
+    align-items: center;
+    height: 100%;
+    
+}
+
+/* .grid {
+    display: grid;
+    gap: 30px;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.logo {
+    font-family: 'Ameyallinda Signatur';
+    font-size: 24px;
+}
+
+.navbar {
+    grid-column-end: 2;
+}
+
+.list-items-tags {
+    padding: 5px 10px;
+    margin: 0 10px;
+} */ 
