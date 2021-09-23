@@ -1,16 +1,50 @@
 [
     {
+    "id": 1,    
     "identity" : "HIP-HOP",
     "img_src": "img/Cover+of+NF+THE+SEARCH.png",
-    "artist_name" : "NF -",
-    "music_title" : "The Search",
+    "artist_name" : "NF",
+    "music_title" : "- The Search",
     "music_src": "mp3/01 The Search.mp3"
     },
     {
+    "id":2,  
     "identity" : "RNB",
     "img_src": "img/sasha-older.jpg",
-    "artist_name" : "Sasha Sloan - ",
-    "music_title" : "Older",
+    "artist_name" : "Sasha Sloan",
+    "music_title" : "- Older",
     "music_src": "mp3/Sasha Sloan - Older.mp3"
+    },
+    {
+    "id":3,  
+    "identity" : "POP",
+    "img_src": "img/tennesse.jpg",
+    "artist_name" : "Kiiara",
+    "music_title" : "-  Tennesee",
+    "music_src": "mp3/Kiiara_-_Tennessee_(Official_Audio)(128k).mp3"
+    },
+    {
+        "id":3,  
+        "identity" : "RNB",
+        "img_src": "img/billie.jpg",
+        "artist_name" : "Billie Eilish",
+        "music_title" : "-  Six Feet Under",
+        "music_src": "mp3/Billie Eilish - SIX FEET UNDER.mp3"
+    },
+    {
+        "id":3,  
+        "identity" : "RNB",
+        "img_src": "img/promises.jpg",
+        "artist_name" : "Maveric City",
+        "music_title" : "-  Promises",
+        "music_src": "mp3/Promises__feat._Joe_L_Barnes___Naomi_Raine__-_Maverick_City___TRIBL(128k).mp3"
+    },
+    {
+        "id":3,  
+        "identity" : "RNB",
+        "img_src": "img/Bites-The-Dust-cover.jpg",
+        "artist_name" : "Simi",
+        "music_title" : "-  City Lights",
+        "music_src": "mp3/Simi_-_City_Lights_NaijaMusic.com.ng.mp3"
     }
 ]
